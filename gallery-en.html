@@ -50,16 +50,70 @@
       .right {
         float: right;
       }
+      .left {
+        float: left;
+      }
       hr {
         background-color: black;
         width: 100%;
         height: 5px;
       }
       h2 {
-        line-height: 100px;
+        line-height: 50px;
       }
       p {
         line-height: 0px;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
+      td {
+        text-align: center;
+        color: rgb(10, 96, 209);
+        font-size: 200%;
+      }
+      th {
+        color: rgb(10, 70, 209);
+        font-size: 210%;
+      }
+      table,
+      th,
+      td {
+        font-family: My-First-Font-Advanced;
+        border: 3px solid rgb(10, 96, 209);
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      caption {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-size: 350%;
+      }
+      .blue {
+        color: rgb(10, 96, 209);
+      }
+      .darkblue {
+        color: rgb(7, 55, 118);
+      }
+      .text {
+        text-align: center;
+        font-family: My-First-Font-Advanced;
+        font-size: 210%;
+      }
+      .ptext {
+        text-align: center;
+        font-family: My-First-Font-Advanced;
+        font-size: 220%;
+      }
+      .btext {
+        text-align: center;
+        font-family: My-First-Font-Advanced;
+        font-size: 300%;
       }
     </style>
   </head>
@@ -68,5 +122,43 @@
     <h1 class="centeredlorem">SCHULE SIHLFELD</h1>
     <hr />
     <hr />
+    <table class="left">
+      <tr>
+        <th class="darkblue">gallery info</th>
+      </tr>
+      <tr>
+        <td class="blue">2026</td>
+      </tr>
+      <tr>
+        <td class="blue">2025</td>
+      </tr>
+      <tr>
+        <td class="blue">2024</td>
+      </tr>
+      <tr>
+        <td class="blue">2023</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="gallery/2022-en.html"
+            style="text-decoration: none"
+            class="blue"
+            >2022</a
+          >
+        </td>
+      </tr>
+    </table>
+    <h2 class="btext" style="color: rgb(7, 55, 118)">gallery info</h2>
+    <h2 class="text">
+      This is the gallery! This gallery has the pictures taken from
+    </h2>
+    <h2 class="ptext" style="color: rgb(10, 96, 209)">Miriam Gmür</h2>
+    <h2 class="text">
+      in the event saved here! All photos were sorted into the respective
+      year.<br />
+      <br />
+      Enjoy watching!<br />
+    </h2>
   </body>
 </html>
