@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/style.css">
+    <title>Sihlfeld ALL STAR GAMES Event</title>
+  </head>
+  <body>
+    <a href="/de/">
+      <p class="VersionSwap">DE</p>
+    </a>
+    <p>​</p>
+    <p>​</p>
+    <h2 style="color: rgb(10, 96, 209)" class="centered">
+      ALL-STAR-GAMES<br />
+    </h2>
+    <a href="teams/volleyball/">
+      <img src="/images/volleyballtime.png" alt="volleyball" class="ballv" />
+    </a>
+    <a href="teams/football/">
+      <img src="/images/fussballtime.png" alt="fussball" class="ballf" />
+    </a>
+    <h2 style="color: rgb(10, 96, 209)" class="centered">SIHLFELD</h2>
+    <h2 class="date">
+      THURSDAY 13 JULY 2023 AT
+    </h2>
+    <div id="center">
+      <img src="/images/time.png" alt="14:00" class="time" />
+    </div>
+    <div id="center">
+      <a href="gallery/">
+        <img src="/images/gallery.png" alt="Bildergallerie" class="bild">
+      </a>
+    </div>
+    <hr>
+    <div id="center">
+      <a href="construction/" class="centered" style="text-decoration: none">LIVESTREAM</a>
+    </div>
+    <hr>
+    <a href="schiri/football/">
+      <img src="/images/schiri.png" alt="Pfeiffe" class="schiri1">
+    </a>
+    <img src="/images/fussball.png" alt="Fussball" class="schirif">
+    <div id="center">
+      <a href="mod/">
+        <img src="/images/moderator.png" alt="Moderator" class="mod">
+      </a>
+    </div>
+    <img src="/images/volleyball.png" alt="Volleyball" class="schiriv">
+    <a href="schiri/volleyball/">
+      <img src="/images/schiri.png" alt="Pfeiffe" class="schiri2">
+    </a>
+    <hr>
+    <h2 class="centered">Rules</h2>
+    <div class="">
+      <img src="/images/All-Star-Games - Regelwerk - Fussball.jpg" alt="Regeln" class="regelnleft">
+      <img src="/images/All-Star-Games - Regelwerk - Volleyball.jpg" alt="Regeln" class="regelnright">
+    </div>
+    <hr />
+    <h2 class="countdown">The event starts in</h2>
+    <p id="demo" class="countdowntime"></p>
+    <hr>
+    <a href="teams/sihlfeld/" style="text-decoration: none">
+      <h2 class="vs">
+        SIHLFELD<br>
+        ALL-STAR-TEAM<br>
+      </h2>
+    </a>
+    <div id="center">
+      <img src="/images/VS.png" alt="VS">
+    </div>
+    <a href="#6-team" style="text-decoration: none;">
+      <h2 class="vs">6TH GRADERS</h2>
+    </a>
+    <hr />
+    <h2 class="teamtitle" id="6-team">6TH GRADES TEAMS</h2>
+    <div>
+      <a href="teams/löffel/">
+        <p class="team1">Klasse loeffel</p>
+      </a>
+      <a href="teams/ader/">
+        <p class="team2">Klasse Ader</p>
+      </a>
+    </div>
+    <hr>
+    <hr>
+    <a href="/languages/" class="menu">More languages</a>
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DsLgt9BiQUmrj-BCZgVlirYIRW73flFCjtr75C4HvA9URERFTzBGWkJCUlc2QkFKSDRQSVFKQzFHNi4u" class="menu">Feedback</a>
+    <script>
+    var countDownDate = new Date("July 13, 2023 14:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60))  / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Zeit abgelaufen";
+      }
+    }, 1000);
+    </script>
+  </body>
+</html>
