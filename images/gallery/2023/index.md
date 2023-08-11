@@ -2,4 +2,4 @@
 1 - Mariam Gmür
 2 - Nicolas Arteaga
 # Stucture
-[source]-[image number]IMG
+[source]-[image number]_IMG
